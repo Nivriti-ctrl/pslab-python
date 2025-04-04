@@ -43,6 +43,13 @@ capacitance = psl.multimeter.measure_capacitance()
 print(capacitance)
 ```
 
+## Tips & Troubleshooting
+
+from pslab import ScienceLab
+psl = ScienceLab()
+psl.oscilloscope.configure_trigger(channel='CH1', voltage=1.0, prescaler=15)  # Longer timeout
+
+
 ## Communication
 
 * If you encounter any bugs, please file them in our [issue tracker](https://github.com/fossasia/pslab-python/issues).
